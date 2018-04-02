@@ -137,7 +137,7 @@ class SubjectText(object):
     
 # driver class
 class ConcatennativeTTS(object):
-    TARGETDIR = os.path.join( os.path.sep.join( os.path.abspath('./').split(os.path.sep)[:-1] ), 'tamilsound' )
+    TARGETDIR = os.path.join( os.path.split(__file__)[0],'tamilsound')
     FMT = 'mp3'
     def __init__(self,text,outputfile):
         super(ConcatennativeTTS,self).__init__()
